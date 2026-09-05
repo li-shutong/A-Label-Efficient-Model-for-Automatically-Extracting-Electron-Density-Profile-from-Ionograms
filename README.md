@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#abstract">Abstract</a> ·
   <a href="#plain-language-summary">Plain Language</a> ·
-  <a href="#results-at-puer-2024">Results</a> ·
+  <a href="#experiments">Experiments</a> ·
   <a href="#method">Method</a> ·
   <a href="#getting-started">Code</a> ·
   <a href="#citation">Citation</a>
@@ -46,15 +46,23 @@ Supervised networks need **labeled** ionograms from a fixed archive and can only
 
 ---
 
-## Results at Puer, 2024
+## Experiments
 
-Full-year 2024 ionograms from the Puer station:
+Evaluation uses ionosonde records at three stations in China: Zhangye, Daofu, and Puer.
 
-| Target | RMSE | R<sup>2</sup> |
-|---|---|---|
-| *fo*F2 | 0.3822 MHz | 0.9811 |
-| *hm*F2 | 13.5646 km | 0.9049 |
-| Electron density profile | 1.1594 MHz | 0.9364 |
+<p align="center">
+  <img src="docs/fig_stations.jpg" width="52%" alt="Locations of the test ionosonde stations">
+</p>
+<p align="center">
+  <sub><b>Figure 3.</b> Geographic coordinates of the test stations: Zhangye, Daofu, and Puer.</sub>
+</p>
+
+<p align="center">
+  <img src="docs/fig_edp_cases.jpg" width="96%" alt="Electron density profile retrieval before and after adaptation">
+</p>
+<p align="center">
+  <sub><b>Figure 4.</b> Retrieved electron density profiles before and after adaptation versus ground truth. (a) 1st Jan. 14:30:01 BJT; (b) 1st Feb. 17:00:00 BJT; (c) 1st Mar. 10:30:00 BJT; (d) 2nd Apr. 16:00:00 BJT; (e) 15th May. 18:30:00 BJT; (f) 28th Jun. 18:30:00 BJT; (g) 2nd Jul. 18:00:01 BJT; (h) 4th Aug. 16:00:00 BJT; (i) 4th Sep. 17:00:00 BJT; (j) 8th Oct. 08:30:17 BJT; (k) 1st Nov. 11:30:01 BJT; (l) 4th Dec. 11:00:00 BJT.</sub>
+</p>
 
 ---
 
