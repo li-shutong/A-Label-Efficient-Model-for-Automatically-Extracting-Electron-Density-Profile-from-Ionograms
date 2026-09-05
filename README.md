@@ -40,18 +40,6 @@ Supervised networks require labeled ionograms from a fixed archive and can evalu
 <i>Figure 3.&ensp;Retrieved electron density profiles before and after adaptation versus ground truth. (a) 1st Jan. 14:30:01 BJT; (b) 1st Feb. 17:00:00 BJT; (c) 1st Mar. 10:30:00 BJT; (d) 2nd Apr. 16:00:00 BJT; (e) 15th May. 18:30:00 BJT; (f) 28th Jun. 18:30:00 BJT; (g) 2nd Jul. 18:00:01 BJT; (h) 4th Aug. 16:00:00 BJT; (i) 4th Sep. 17:00:00 BJT; (j) 8th Oct. 08:30:17 BJT; (k) 1st Nov. 11:30:01 BJT; (l) 4th Dec. 11:00:00 BJT.</i>
 </div>
 
-## Method
-
-Physical synthesis.&ensp;IRI-2020 yields a continuous profile \(N_e(h)\). A theoretical ionogram follows the group-path integral
-
-\[
-h'(f)=\int_0^{h_0(f)}\mu'(f,h)\,dh.
-\]
-
-Backward domain adaptation (`gan/`).&ensp;CycleGAN with WGAN-GP learns the unpaired mapping from theoretical to observed ionograms and constructs a large-scale labeled synthetic set.
-
-Forward extraction (`fne/`).&ensp;A convolutional network predicts key parameters (*fo*F2, *hm*F2) and the electron density profile from real ionograms, with optional adaptation at a new site.
-
 ## Code
 
 ```
