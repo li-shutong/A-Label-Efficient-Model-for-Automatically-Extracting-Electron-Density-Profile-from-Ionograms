@@ -16,12 +16,10 @@ To avoid this, the team built artificial ionograms from electron density profile
 
 ## Setting
 
-Supervised networks require labeled ionograms from a fixed archive and can evaluate only a small held-out fraction at the same site. The proposed setting uses data that require no manual annotation and can be evaluated on nearly all records at a given latitude and longitude, after only a thin fine-tuning split.
+Labeled supervision versus evaluation on nearly all records, with no manual annotation.
 
 <div align="center">
 <img src="docs/fig_supervision_vs_proposed.jpg" width="88%" alt="Supervision versus the proposed setting">
-<br/>
-<i>Figure 1.&ensp;Input and test protocol. Left: labeled, site-fixed supervision and a small test window. Right: no manual annotation; nearly all data at a given location are used for evaluation after minimal fine-tuning.</i>
 </div>
 
 ## Experiments
@@ -29,7 +27,7 @@ Supervised networks require labeled ionograms from a fixed archive and can evalu
 <div align="center">
 <img src="docs/fig_stations.jpg" width="48%" alt="Test stations">
 <br/>
-<i>Figure 2.&ensp;Geographic coordinates of the test stations: Zhangye, Daofu, and Puer.</i>
+<i>Geographic coordinates of the test stations: Zhangye, Daofu, and Puer.</i>
 </div>
 
 <br/>
@@ -37,7 +35,7 @@ Supervised networks require labeled ionograms from a fixed archive and can evalu
 <div align="center">
 <img src="docs/fig_edp_cases.jpg" width="94%" alt="Retrieved electron density profiles">
 <br/>
-<i>Figure 3.&ensp;Retrieved electron density profiles before and after adaptation versus ground truth. (a) 1st Jan. 14:30:01 BJT; (b) 1st Feb. 17:00:00 BJT; (c) 1st Mar. 10:30:00 BJT; (d) 2nd Apr. 16:00:00 BJT; (e) 15th May. 18:30:00 BJT; (f) 28th Jun. 18:30:00 BJT; (g) 2nd Jul. 18:00:01 BJT; (h) 4th Aug. 16:00:00 BJT; (i) 4th Sep. 17:00:00 BJT; (j) 8th Oct. 08:30:17 BJT; (k) 1st Nov. 11:30:01 BJT; (l) 4th Dec. 11:00:00 BJT.</i>
+<i>Retrieved electron density profiles before and after adaptation versus ground truth. (a) 1st Jan. 14:30:01 BJT; (b) 1st Feb. 17:00:00 BJT; (c) 1st Mar. 10:30:00 BJT; (d) 2nd Apr. 16:00:00 BJT; (e) 15th May. 18:30:00 BJT; (f) 28th Jun. 18:30:00 BJT; (g) 2nd Jul. 18:00:01 BJT; (h) 4th Aug. 16:00:00 BJT; (i) 4th Sep. 17:00:00 BJT; (j) 8th Oct. 08:30:17 BJT; (k) 1st Nov. 11:30:01 BJT; (l) 4th Dec. 11:00:00 BJT.</i>
 </div>
 
 ## Code
