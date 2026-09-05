@@ -38,7 +38,7 @@ To avoid this, the team built artificial ionograms from electron density profile
 Supervised networks need **labeled** ionograms from a fixed archive and can only test a **small proportion** of same-site data held out of training. The proposed network uses data that require **no manual annotation** and can be evaluated on **nearly all** records from a given latitude and longitude, with only a thin fine-tuning split.
 
 <p align="center">
-  <img src="docs/fig_supervision_vs_proposed.png" width="92%" alt="Supervision networks versus the proposed label-efficient setting">
+  <img src="docs/fig_supervision_vs_proposed.jpg" width="92%" alt="Supervision networks versus the proposed label-efficient setting">
 </p>
 <p align="center">
   <sub><b>Figure 1.</b> Input and test protocol. Left: labeled, site-fixed supervision and a small test window. Right: no manual annotation; nearly all data at a given location are used for evaluation after minimal fine-tuning.</sub>
